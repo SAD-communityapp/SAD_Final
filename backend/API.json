@@ -1,0 +1,232 @@
+{
+	//顯示公告
+	//GET
+	//'/announcements'
+	//requestbody
+	{
+	}
+	//expected all
+	{
+		"Announcement_ID":"",
+		"Title":"",
+		"Post_Time": "",
+		"Category": "",
+		/*example:{ 
+			Announcement_ID: 1,
+			Title: '水塔清洗公告', 
+			Post_Time: 2024/5/10,
+			Category: '最新消息', 
+			*/
+	}
+}
+{
+	//公告詳細
+	//GET
+	//'/announcements/id=:id'
+	//requestbody
+	{
+	}
+	//expected
+	{
+		"Announcement_ID":"",
+		"Title":"",
+		"Post_Time": "",
+		"Category": "",
+		"Content": "",
+		"Comment_ID": [],
+		"Nick_Name": [],
+		"Comment_Time": [],
+		"Comment_Contents": [],
+		"Reply_Comment_ID": [],
+		/*example:{ 
+			Announcement_ID: 1,
+			Title: '水塔清洗公告', 
+			Post_Time: 2024/5/10,
+			Category: '最新消息', 
+			content: '親愛的住戶您好：...敬上' , 
+			Comment_ID:[1, 2], 
+			Nick_Name:['劉岩板', '管理員'], 
+			Comment_Time:['2024/7/8 16:43', '2024/7/8 21:22'], 
+			Content:["為什麼又要洗水塔，又要停水很麻煩欸！", "不好意思，因為近日有颱風造成水質下降，因此管委會決定要再次清洗水塔，對於您的不便，我們深感抱歉。"]}
+			Reply_Comment_ID:['NULL', 1]
+		*/
+	}
+}
+{
+	//發佈公告
+	//POST
+	//'/announcements'
+	//requestbody
+	{
+		"Title":"",
+		"Post_Time": "",
+		"show_in_calendar":"", 
+		"start_date": "", 
+		"end_date": "",
+		"Content": "",
+		"Category": "",
+	}
+	//expected
+	{
+	}
+}
+{
+	//顯示行事曆
+	//GET
+	//'/announcements/calender'
+	//request
+	{
+	}
+	//expected
+	{
+		"Announcement_ID":"",
+		"Title":"",
+		"start_date": "",
+		"end_date": "",
+		/*example:{ 
+			Announcement_ID: 1,
+			Title: '水塔清洗公告', 
+			start_date: 2024/5/1, 
+			end_date: 2024/5/3 , 
+			Reply_Comment_ID:['NULL', 1]
+		*/
+	}
+}
+{
+	//發佈留言
+	//POST
+	//request
+	{
+		"user_id":"",
+		"announcement_id":"",
+		"reply_comment_id": "",
+		"content": ""
+		/*example:{ 
+			"user_id":"user1",
+			"announcement_id":"1",
+			"reply_comment_id": "1",
+			"content": "辛苦了",
+		*/
+	}
+	//expected
+	{
+	}
+}
+{
+	//公設預約
+	//POST
+	//'/utility/reserve'
+	//request
+	{
+		"user_id":"",
+		"facility_id":"",
+		"date": "",
+		"time_periods": [],
+		/*example:
+		{
+		"user_id":"user1",
+		"utility_id": "util001",
+		"date": "2024-5-16",
+		"start_time": "9:00",
+		"end_time": "10:00"
+		}
+		*/
+	}
+	//expected
+	{
+	}
+}
+{
+	//得到全部公設預約紀錄
+	//GET
+	//'/utility/user=:userId'
+	//request
+	{
+		"user_id":"",
+	}
+	//expected
+	{
+		"utilities_id": "util001",
+		"reserved_user_id": "user1",
+		"date": "2024-05-15T16:00:00.000Z",
+		"start_time": "09:00:00+08",
+		"end_time": "10:00:00+08"
+	}
+}
+{
+
+	//管理費繳交 得到該用戶全部管理費繳交紀錄
+	//GET
+	//'/fee/user=:userId'
+	//request
+	{
+	}
+	//expected
+	{
+		"user_id":"",
+		"payment_status":"", //未繳還已繳
+		"deadline": "",
+		"amount": "",
+		"payment_date": "",
+	}
+}
+{
+	//顯示通知 得到該用戶全部通知
+	//GET
+	//'/notification/user=:userId'
+	//requestbody
+	{
+	}
+	//expected
+	{
+		
+		"topic":"",
+		"datetime":"",
+		"notification_id": "",
+		"read": "", //有沒有讀了
+	}
+}
+{
+	//閱讀通知（更新通知狀態）
+	//PUT
+	//'/notification'
+	//requestbody
+	{
+		"userid":"",
+		"notification_id":"",
+		"read": "", //有沒有讀了
+	}
+	//expected
+	{
+		
+	}
+}
+{
+	//發佈通知
+	//POST
+	//'/notification'
+	//requestbody
+	{
+		"userid":"",
+		"type":"",
+		"content": "",
+		"object_ids": "", //通知對象
+	}
+	//expected
+	{
+	}
+}
+{
+	//登入
+	//GET
+	//'/users/login'
+	//requestbody
+	{
+		"userid":"",
+		"password":""
+	}
+	//expected
+	{
+		"success":""
+	}
+}
