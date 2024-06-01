@@ -1,0 +1,21 @@
+:root {
+    --notification: #F53120;
+    --即時對話: #D6E2D7;
+    --primary-100: #9BB0C1;
+    --primary-75: #ADC4CF;
+    --primary-50: #BED7DC;
+    --primary-25: #DDE8E7;
+    --secondary-100: #FFDF6A;
+    --secondary-75: #FEE68C;
+    --secondary-50: #FDECAE;
+    --secondary-25: #FCF3D0;
+    --tertiary-100: #ACACAC;
+    --tertiary-75: #D2D2D2;
+    --tertiary-50: #E4E4E4;
+    --tertiary-25: #EFEFEF;
+    --background-米白: #FBF9F1;
+    --background-深: #F7F7F7;
+    --text-black: #292929;
+    --text-white: #FFFFFF;
+  }
+  

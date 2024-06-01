@@ -1,0 +1,79 @@
+/* Figma Styles of your File */
+:root {
+    /* Colors */
+    --notification: #f53120;
+    --: #d6e2d7;
+    --primary-100percent: #9bb0c1;
+    --primary-75percent: #adc4cf;
+    --primary-50percent: #bed7dc;
+    --primary-25percent: #dde8e7;
+    --secondary-100percent: #ffdf6a;
+    --secondary-75percent: #fee68c;
+    --secondary-50percent: #fdecae;
+    --secondary-25percent: #fcf3d0;
+    --tertiary-100percent: #acacac;
+    --tertiary-75percent: #d2d2d2;
+    --tertiary-50percent: #e4e4e4;
+    --tertiary-25percent: #efefef;
+    --background: #fbf9f1;
+    --background: #f7f7f7;
+    --text-black: #292929;
+    --text-white: #ffffff;
+    --gradient-1: linear-gradient(
+      180deg,
+      rgba(190, 215, 220, 1) 0%,
+      rgba(214, 226, 215, 1) 48.71966540813446%,
+      rgba(252, 243, 208, 1) 100%
+    );
+    --gradient-2: linear-gradient(
+      180deg,
+      rgba(252, 243, 208, 1) 0%,
+      rgba(214, 226, 215, 1) 48.71966540813446%,
+      rgba(190, 215, 220, 1) 100%
+    );
+  
+    /* Fonts */
+    --title-font-family: NotoSans-DisplaySemiBold, sans-serif;
+    --title-font-size: 16px;
+    --title-line-height: 20px;
+    --title-font-weight: 400;
+    --title-font-style: normal;
+    --heading-h3-font-family: NotoSans-Bold, sans-serif;
+    --heading-h3-font-size: 24px;
+    --heading-h3-line-height: 33px;
+    --heading-h3-font-weight: 700;
+    --heading-h3-font-style: normal;
+    --heading-h5-font-family: NotoSans-SemiBold, sans-serif;
+    --heading-h5-font-size: 18px;
+    --heading-h5-line-height: 24px;
+    --heading-h5-font-weight: 600;
+    --heading-h5-font-style: normal;
+    --body-bold-font-family: NotoSans-DisplaySemiBold, sans-serif;
+    --body-bold-font-size: 14px;
+    --body-bold-line-height: 20px;
+    --body-bold-font-weight: 400;
+    --body-bold-font-style: normal;
+    --body-regular-font-family: NotoSans-Regular, sans-serif;
+    --body-regular-font-size: 14px;
+    --body-regular-line-height: 20px;
+    --body-regular-font-weight: 400;
+    --body-regular-font-style: normal;
+    --body-small-bold-font-family: NotoSans-DisplaySemiBold, sans-serif;
+    --body-small-bold-font-size: 12px;
+    --body-small-bold-line-height: 16px;
+    --body-small-bold-font-weight: 400;
+    --body-small-bold-font-style: normal;
+    --body-small-regular-font-family: NotoSans-Regular, sans-serif;
+    --body-small-regular-font-size: 12px;
+    --body-small-regular-line-height: 16px;
+    --body-small-regular-font-weight: 400;
+    --body-small-regular-font-style: normal;
+    --body-smallest-regular-font-family: NotoSans-Regular, sans-serif;
+    --body-smallest-regular-font-size: 10px;
+    --body-smallest-regular-line-height: 14px;
+    --body-smallest-regular-font-weight: 400;
+    --body-smallest-regular-font-style: normal;
+  
+    /* Effects */
+  }
+  
